@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,7 +21,7 @@ import com.restapi.springboot.model.User;
 import com.restapi.springboot.util.CustomErrorType;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
 public class RestApiController {
 
 	public static final Logger logger = LoggerFactory.getLogger(RestApiController.class);

@@ -1,0 +1,10 @@
+/.apt_generated/
+# Java annotation processor (APT)
+
+/.settings/
+/target/
+/logs/
+.classpath
+.factorypath
+.project
+.idea
